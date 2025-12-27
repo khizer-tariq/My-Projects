@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://wallpapercat.com/w/full/f/4/5/5825792.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {           /* red green blue alpha  (255) */
+    background-color: rgba(0, 0, 0, 0.9); 
+    width: 500px;
+    padding: 25px;
+    color: white;
+    border-top: 5px solid aqua;
+    border-left:5px solid aqua;
+    border-right: 5px solid aqua;
+    border-bottom:5px solid aqua;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 10); 
+                /* x-axix, y-axix border radius */    
+}
+
+.container h1 {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 30px;
+    text-align: center;
+}
+
+.first-name, 
+.last-name {   
+    width: 49%;
+    display: inline-flex;    
+    align-items: center;
+    border: 1px solid #555;  
+    padding: 10px;
+    margin-bottom: 12px;   
+    background: transparent; 
+}
+
+.email, 
+.mobile-no,
+.DOB {
+    width: 100%;           
+    display: flex;   
+    align-items: center;     
+    border: 1px solid #555; 
+    padding: 10px;
+    margin-bottom: 15px;
+    background: transparent;
+}
+
+.material-icons-outlined {
+    color: aqua;           
+    margin-right: 10px;    
+    font-size: 22px; 
+    width: auto;  
+    padding: 0;    
+}
+
+
+input {
+    color: white !important; 
+    text-align: center;
+    border: none;          
+    outline: none;         
+    width: 100%;           
+    font-size: 14px;
+    background: transparent;
+}
+
+
+::placeholder {
+    color: #bbb;
+}
+
+
+input[type="date"] {
+    color-scheme: dark;
+}
+
+
+.button-box {
+    display: flex;
+    justify-content: center;         
+    gap: 15px;             
+    margin-top: 20px;      
+}    
+
+.GOTO {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+   width: auto;
+    min-width: 200px; 
+}
+
+.neon-button {
+    font-size: 16px;
+    font-weight: bold;
+    color: aqua; 
+    background-color: transparent; 
+    border: 2px solid aqua;
+    padding: 12px 20px;
+    border-radius: 50px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1); 
+}
+
+
+.neon-button:hover {
+    color: black; 
+    background-color: aqua; 
+    box-shadow: 0 0 10px aqua, 0 0 40px aqua, 0 0 80px aqua; 
+    border-color: aqua;
+}
+
+
+.reset-btn {
+    color: #ff3333; 
+    border-color: #ff3333;
+    box-shadow: 0 0 10px rgba(255, 51, 51, 0.1);
+}
+
+.reset-btn:hover {
+    background-color: #ff3333;
+    color: white;
+    box-shadow: 0 0 10px #ff3333, 0 0 40px #ff3333;
+    border-color: #ff3333;
+}
+ 
+.goto-form {
+    color: #3333FF; 
+    border: 2px solid #3333FF;
+    box-shadow: 0 0 10px #3333FF, 0 0 30px #3333FF;}
+
+.goto-form:hover {
+    background-color: #3333FF;
+    color: white;
+    box-shadow: 0 0 10px #3333FF, 0 0 40px #3333FF;
+    border-color: #3333FF;
+}
+
+    
+
+
+
+/*-------------------------------------TABLE DATA DESIGN-----------------------------*/
+.table {
+    background-color: rgba(0, 0, 0, 0.9); 
+    width: 800px;  
+    padding: 25px;
+    color: white;
+    border-top: 5px solid aqua;
+    border-left: 5px solid aqua;
+    border-right: 5px solid aqua;
+    border-bottom: 5px solid aqua;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.2); 
+    text-align: center;
+    max-height: 90vh; 
+    overflow-y: auto;  
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 10px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+    color: black;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #555;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #555;
+    color: white;
+    font-size: 14px;
+}
+
+.back-btn {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+    color: black;
+    border: 2px solid aqua;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    width: 100%;
+}
+
+.back-btn:hover {
+    background-color: transparent;
+    color: aqua;
+    box-shadow: 0 0 30px aqua;
+    transform: scale(1.02); 
+
+}
+
+tr:hover td {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
