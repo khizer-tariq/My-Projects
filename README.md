@@ -1,2 +1,2 @@
 # My-Projects
-My personal code portfolio featuring a variety of projects. Includes university coursework, full-stack web applications, and problem-solving solutions across different programming languages.
+A centralized collection of my software projects, academic assignments, and personal coding experiments. This repository showcases my journey in Web Development, C++, and Software Engineering
